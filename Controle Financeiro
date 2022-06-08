@@ -1,0 +1,50 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia nome
+		real salario, aluguel, luz, agua, cartao, supermercado, iptu, ipva, condominio, internet, telefone, lazer, outros, saldo, soma
+				
+
+		escreva("Qual é o seu nome? ")
+		leia(nome)
+		escreva("Valor do seu salário: ")
+		leia(salario)
+		escreva("Valor do seu aluguel: ")
+		leia(aluguel)
+		escreva("Valor da sua conta de luz: ")
+		leia(luz)
+		escreva("Valor da sua conta de água: ")
+		leia(agua)
+		escreva("Valor da sua fatura do seu cartão: ")
+		leia(cartao)
+		escreva("Valor gasto com supermercado: ")
+		leia(supermercado)
+		escreva("Valor do seu IPTU: ")
+		leia(iptu) 
+		escreva("Valor do seu IPVA: ")
+		leia(ipva) 
+		escreva("Valor do seu condomínio: ")
+		leia(condominio)
+		escreva("Valor da sua internet: ")
+		leia(internet)
+		escreva("Valor da sua telefone: ")
+		leia(telefone)
+		escreva("Valor dos seus gastos com lazer: ")
+		leia(lazer)
+		escreva("Despesas com outros gastos: ")
+		leia(outros)
+
+		soma = aluguel + luz + agua + cartao + supermercado + iptu + ipva + condominio + internet + telefone + lazer + outros
+		saldo =  salario - soma 
+
+		se(soma>salario){
+			escreva(nome +", infelizmente o seu gasto é maior do que você ganha, então é o momento de pensar em economizar. Vai ter que diminuir o valor de " + saldo + ", do seu gasto mensal.")
+		}senao{
+			escreva("Parabéns " + nome +"!!! Você está com o crédito de " + saldo + ", para fazer um aplicação ou antecipar uma conta.")
+		}
+		
+	}
+
+}
